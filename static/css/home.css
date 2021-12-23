@@ -1,6 +1,6 @@
 body{ 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     background-image: url("/static/img/background.png");
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin:auto;
@@ -16,28 +16,20 @@ div.content-main{
     background-size: cover;
     width: 100%;
     height: 25%;
-
 }
 
 div.content-main div.topbar{
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
+    width: 90%;
     height: 15%;
+    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 div.content-main div.main-notice{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
     width: 60%;
     height: 85%;
+    margin: auto;
 }
 
 /* <--- MAIN SECTION  */
@@ -45,18 +37,15 @@ div.content-main div.main-notice{
 
 /* KNOW US SECTION ---> */
 div.block-know-us{
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 25%;
 }
 div.content-know-us{
-    display: flex;
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
     width: 60%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
 
 }
 div.content-know-us div.know-us-left{
@@ -72,20 +61,18 @@ div.content-know-us div.know-us-right{
 
 /*  SERVICES SECTION --->  */
 div.block-services{
-    background-color: #f3f3f3;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 20%;
+    display: flex;
+    background-color: #f3f3f3;
 }
 div.content-services{
+    width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
-    height: 100%;
+    margin: auto;
 }
 div.content-services div.services-title{
     width: 100%;
@@ -97,7 +84,6 @@ div.content-services div.services-box{
     height: 55%;
     margin-bottom: 5%;
     display: flex;
-    flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
