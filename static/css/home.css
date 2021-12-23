@@ -1,0 +1,403 @@
+body{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/static/img/background.png");
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin:auto;
+    width:100%;
+    height: 3000px;
+    
+}
+
+/* MAIN SECTION ---> */
+div.content-main{
+    background-image: url("/static/img/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+
+}
+
+div.content-main div.topbar{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+div.content-main div.main-notice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 85%;
+}
+
+/* <--- MAIN SECTION  */
+
+
+/* KNOW US SECTION ---> */
+div.block-know-us{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+div.content-know-us{
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 100%;
+
+}
+div.content-know-us div.know-us-left{
+    width: auto;    
+    height: 70%;
+}
+div.content-know-us div.know-us-right{
+    width: 50%;
+    height: 75%;
+}
+/* <--- KNOW US SECTION  */
+
+
+/*  SERVICES SECTION --->  */
+div.block-services{
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+div.content-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 100%;
+}
+div.content-services div.services-title{
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+}
+div.content-services div.services-box{
+    width: 90%;
+    height: 55%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* <--- SERVICES SECTION  */
+
+
+/*  CONTACT SECTION --->  */
+div.content-contact{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 30%;
+}
+div.content-contact div.contact-map{
+    width: 100%;
+    height: 60%;
+}
+div.contact-footer{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    height: 40%;
+}
+
+div.footer-block{
+    border-radius: 6px;
+    background-color: rgb(119, 81, 81);
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 60%;
+}
+/* <--- CONTACT SECTION  */
+
+
+
+
+/*   IN BLOCK SECTION    */
+
+
+/* MAIN BLOCK SECTION */
+
+
+/* TOP VAR SECTION */
+
+
+/* LOGO SECTION */
+div.topbar-left div.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-left div.logo a{
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 2px;
+}
+div.topbar-left div.logo img{
+    margin-top: 2px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+div.topbar-left div.logo p{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin-left: 10px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+}
+/* NAVBAR SECTION */
+
+
+
+/* NAVBAR SECTION */
+div.topbar-right div.navbar{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-right div.navbar ul{
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+div.topbar-right div.navbar ul li{
+    margin-left: 40px;
+    width: 100%;
+    height: 100%;
+}
+div.topbar-right div.navbar ul li a{ 
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+div.topbar-right div.navbar ul li a.login-button{
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #5372DD;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* NOTICE SECTION */
+
+div.main-notice{    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+div.main-notice div.notice-left{    
+    width: 45%;
+    margin-right: 5%;
+    height: 60%;
+    float: left;
+    color: white;
+}
+div.notice-left div.notice-title{
+
+}
+div.notice-left div.notice-description{
+    margin-top: 5%;
+}
+div.notice-left div.notice-buttons{
+    margin-top: 7%;
+    width: 100%;
+    height: 30%;
+}
+div.notice-buttons button.buttons-android{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    padding:10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: #36e196 2px solid;
+}
+div.notice-buttons button.buttons-android:hover {
+    background-color: #36e196;
+    color:white;
+  }
+
+div.notice-buttons button.buttons-web{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding:10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: #ffffff 2px solid;
+}
+div.notice-buttons button.buttons-web:hover {
+    background-color: #ffffff;
+    color: #5372DD;
+  }
+
+
+div.main-notice div.notice-right{    
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+div.notice-right div.notice-image img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+}
+
+/* KNOW US BLOCK SECTION */
+
+
+/* LEFT SECTION */
+div.know-us-left div.know-us-image{
+    width: 50%;
+    height: 85%;
+}
+div.know-us-left div.know-us-image img{
+    width: 480px;
+    height: 100%;
+    border-radius: 6px;
+
+}
+/* RIGHT SECTION */
+div.know-us-right div.know-us-information{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    
+}
+
+div.know-us-right div.know-us-information div.know-us-title h5{
+    color: #F3B202;
+}
+
+div.know-us-right div.know-us-information div.know-us-buttons{
+    margin-top: 5%;
+    width: 100%;
+    height: 30%
+}
+
+div.know-us-right div.know-us-information div.know-us-buttons button{
+    margin-top: 5%;
+    padding-left: 15px;
+    padding-right:15px;
+    padding: 15px;
+    background-color: white;
+    color:#5372DD;
+    border: #5372DD 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+div.know-us-right div.know-us-information div.know-us-buttons button:hover{
+    background-color: #5372DD;
+    color:white;
+}
+
+/* SERVICES BLOCK SECTION */
+
+/* TITLE SECTION */
+div.content-services div.services-title{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 25%;
+}
+div.content-services div.services-title h5{
+    color:#F3B202;
+}
+
+/* SERVICES SECTION */
+div.services-box div.services-card{
+    background-color: #ffffff;
+    border-radius: 6px;
+    height: 120px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+
+}
+div.services-box div.services-card:hover{
+    background-color: #ffffff;
+}
+div.services-box div.services-card:hover div.card-image{
+    opacity: 0.2;
+}
+div.services-box div.services-card:hover div.card-text{
+    opacity: 0.2;
+}
+
+div.services-card div.card-image{
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    justify-content: center;
+    display: flex;
+    height: 90%;
+    width: 25%;
+
+}
+div.services-card div.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1%;
+    width: 60%;
+    height: 100%;
+}
+
+div.services-card div.card-text p.card-title{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4%;
+}
+div.services-card div.card-text p.card-description{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0.1%;
+}
+
+
+

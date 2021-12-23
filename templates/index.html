@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home-responsive.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:100,200,300,400,500,600,700">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
+
+    {% block head%}
+    <title>Apitool</title>
+
+    {% endblock %}
+</head>
+<body>
+    {% block body%}
+
+
+    <div class="content-main">
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="logo">
+                    <a href="{{url_for('Index')}}">
+                        <img src="{{url_for('static', filename='img/logo2.png')}}" alt="logo">
+                        <p>APITOOL</p>
+                    </a>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="{{url_for('Index')}}">Inicio</a></li>
+                        <li><a href="{{url_for('about')}}">Nosotros</a></li>
+                        <li><a href="{{url_for('contact')}}">Servicios</a></li>
+                        <li><a href="{{url_for('login')}}">Contacto</a></li>
+                        <li><a class="login-button" href="{{url_for('login')}}">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-notice">
+            <div class="notice-left">
+                <div class="notice-title">
+                    <h1>¿Qué es Apitool?</h1>
+                </div>
+                <div class="notice-description">
+                    <p> Es un servicio de medios sociales y herramientas de gestion para la comunidad de apicultores en argentina, Permitiendo a los usuarios interactuar, colaborar entre sí y desarrollar su trabajo de una manera mas eficaz proporcionando software de ultima tecnologia. </p>
+                    <p> Descarga la ultima version T0.0.1</p>
+                </div>
+                <div class="notice-buttons">
+                    <button class="buttons-android">Android</button>
+                    <button class="buttons-web">Web</button>
+                </div>
+
+
+            </div>
+            <div class="notice-right">
+                <div class="notice-image">
+                    <img src="{{url_for('static', filename='img/notice-image.png')}}" alt="notice-image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="block-know-us">
+    <div class="content-know-us">
+        <div class="know-us-left">
+            <div class="know-us-image">
+                <img src="{{url_for('static', filename='img/know-us.jpg')}}" alt="know-us-image">
+            </div>
+        </div>
+        <div class="know-us-right">
+            <div class="know-us-information">
+                <div class="know-us-title">
+                    <h5>CONOCENOS UN POCO</h5>
+                    <h1>Empresa desarrolladora de software</h1>
+                </div>
+                <div class="know-us-description">
+                    <p> En Apitool, conocemos la gran importancia de las herramientas en el trabajo, por eso dedicamos tiempo a construir las mejores herramientas del mercado.
+
+                        Somos un equipo experimentado en las necesidades del presente, te ayudaremos a trabajar de forma mas cómoda y eficiente, te enseñaremos como explotar al máximo tus recursos y profesionalizarte como apicultor.</p>
+                    <p> Descarga la ultima version T0.0.1</p>
+                </div>
+                <div class="know-us-buttons">
+                    <button>Leer mas</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="block-services">
+    <div class="content-services">
+        <div class="services-title">
+            <h5>NUESTROS SERVICIOS</h5>
+            <h1>Encuentra herramientas</h1>
+        </div>
+        <div class="services-box">
+            <div class="services-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
+                </div>
+                <div class="card-text">
+                    <p class="card-title">HERRAMIENTAS</p>
+                    <p class="card-description">Puedes administrar tus apiarios desde el celular o la computadora y compartirlo con tus amigos.</p>
+                </div>
+            </div>
+            <div class="services-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
+                </div>
+                <div class="card-text">
+                    <p class="card-title">LIBROS Y GUIAS</p>
+                    <p class="card-description">Libros y muchas guías actualizadas, para que aprendas de forma rápida y simple.</p>
+                </div>
+            </div>
+            <div class="services-card">
+                <div class="card-image">                    
+                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
+                </div>
+                    <div class="card-text">
+                        <p class="card-title">CHAT ONLINE</p>
+                        <p class="card-description">Comparte tu experiencia laboral, aprende, enseña y comunícate con otros apicultores.</p>
+                    </div>
+                </div>
+            <div class="services-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
+                </div>
+                <div class="card-text">
+                    <p class="card-title">ESTADISTICAS</p>
+                    <p class="card-description">Promedios tuyos y globales, te ayudara a ser mas eficiente y tomar mejores decisiones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="content-contact">
+        <div class="contact-map">
+            <div class="map-text">MAIN NOTICE</div>
+            <div class="map-image">MAIN IMAGE</div>
+        </div>
+        <div class="contact-footer">
+            <div class="footer-block">CONTACT FOOTER</div>
+        </div>
+    </div>
+
+
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,76 @@
+@media screen and (max-width: 1300px) {
+    div.block-services{
+        height: 50%;
+    }
+    div.content-services{
+        height: 40%;
+    }
+    div.content-main div.main-notice{
+        flex-direction: column-reverse;
+        width: 60%;
+        height: 100%;
+    }
+    div.main-notice div.notice-left{
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+        margin:auto;
+        text-align: center;
+    }
+    div.main-notice div.notice-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        margin:auto;
+    }
+    div.notice-right div.notice-image{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.notice-right div.notice-image img{
+        width: 50%;
+        height: 200px;
+    }
+    div.notice-left div.notice-description{
+        margin:auto;
+    }
+    div.notice-left div.notice-buttons{
+        margin:auto;
+    }
+    div.block-know-us div.content-know-us{
+        width: 60%;
+        height: 90%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    div.content-know-us div.know-us-left{
+        width: 100%;
+        height: 40%;
+    }
+    div.content-know-us div.know-us-left div.know-us-image{
+        width: 100%;
+        height: 80%;
+    }
+    div.content-know-us div.know-us-right{
+        width: 100%;
+        height: 60%;
+    }
+    div.content-know-us div.know-us-right div.know-us-information{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    div.content-know-us div.know-us-right div.know-us-buttons{
+        height: 20%;
+        margin: auto;
+    }
+    div.content-main div.topbar{
+        margin: auto;
+        width: 90%;
+    }
+
+}
+    
