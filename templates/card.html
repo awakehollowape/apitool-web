@@ -1,0 +1,13 @@
+{% macro services_card(title,description,image)%}
+
+<div class="services-card">
+    <div class="card-image">
+        <img src="{{url_for('static', filename=image)}}" alt="services-image">
+    </div>
+    <div class="card-text">
+        <p class="card-title">{{title}}</p>
+        <p class="card-description">{{description}}</p>
+    </div>
+</div>
+
+{% endmacro %}

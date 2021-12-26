@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends './layout.html' %}
+
+{% block head%}
+
     <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">    
     <link rel="stylesheet" href="{{url_for('static', filename='css/home-responsive.css')}}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:100,200,300,400,500,600,700">  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700">
 
-    {% block head%}
     <title>Apitool</title>
 
-    {% endblock %}
-</head>
-<body>
-    {% block body%}
+{% endblock %}
+
+
+{% block body%}
 
 
     <div class="content-main">
@@ -62,8 +58,8 @@
                 </div>
             </div>
         </div>
-
     </div>
+
     <div class="block-know-us" id="block-know-us">
         <div class="content-know-us">
         <div class="know-us-left">
@@ -92,6 +88,7 @@
         </div>
         </div>
     </div>
+
     <div class="block-services" id="block-services">
         <div class="content-services">
         <div class="services-title">
@@ -99,45 +96,20 @@
             <h1>Encuentra herramientas</h1>
         </div>
         <div class="services-box">
-            <div class="services-card">
-                <div class="card-image">
-                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
-                </div>
-                <div class="card-text">
-                    <p class="card-title">HERRAMIENTAS</p>
-                    <p class="card-description">Puedes administrar tus apiarios desde el celular o la computadora y compartirlo con tus amigos.</p>
-                </div>
-            </div>
-            <div class="services-card">
-                <div class="card-image">
-                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
-                </div>
-                <div class="card-text">
-                    <p class="card-title">LIBROS Y GUIAS</p>
-                    <p class="card-description">Libros y muchas guías actualizadas, para que aprendas de forma rápida y simple.</p>
-                </div>
-            </div>
-            <div class="services-card">
-                <div class="card-image">                    
-                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
-                </div>
-                    <div class="card-text">
-                        <p class="card-title">CHAT ONLINE</p>
-                        <p class="card-description">Comparte tu experiencia laboral, aprende, enseña y comunícate con otros apicultores.</p>
-                    </div>
-                </div>
-            <div class="services-card">
-                <div class="card-image">
-                    <img src="{{url_for('static', filename='img/tools.png')}}" alt="services-image">
-                </div>
-                <div class="card-text">
-                    <p class="card-title">ESTADISTICAS</p>
-                    <p class="card-description">Promedios tuyos y globales, te ayudara a ser mas eficiente y tomar mejores decisiones.</p>
-                </div>
-            </div>
+            {% from "card.html" import services_card %}
+
+            {{ services_card("HERRAMIENTAS","Puedes administrar tus apiarios desde el celular o la computadora y compartirlo con tus amigos.", "img/tools.png")}}
+
+            {{ services_card("LIBROS Y GUIAS","Libros y muchas guías actualizadas, para que aprendas de forma rápida y simple.", "img/tools.png")}}
+
+            {{ services_card("CHAT ONLINE","Comparte tu experiencia laboral, aprende, enseña y comunícate con otros apicultores.", "img/tools.png")}}
+
+            {{ services_card("fdsafdsafds","Promedios tuyos y globales, te ayudara a ser mas eficiente y tomar mejores decisiones.", "img/tools.png")}}
+
         </div>
         </div>
     </div>
+
     <div class="block-contact" id="block-contact">
         <div class="content-contact">
             <div class="contact-map">
@@ -179,8 +151,4 @@
 
   
 
-    {% endblock %}
-
-
-    </body>
-</html>
+{% endblock %}
