@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    margin: auto;
+  }
 body{ 
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-image: url("/static/img/background.png");
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin:auto;
@@ -9,7 +13,8 @@ body{
     
 }
 
-/* MAIN SECTION ---> */
+/* -------------------------- MAIN  SECTION --------------------------*/
+
 div.content-main{
     background-image: url("/static/img/main-background.png");
     background-repeat: no-repeat;
@@ -18,121 +23,18 @@ div.content-main{
     height: 25%;
 }
 
+/* -------------------------- TOP  SECTION --------------------------*/
+
 div.content-main div.topbar{
-    width: 90%;
+    width: 80%;
     height: 15%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-div.content-main div.main-notice{
-    width: 60%;
-    height: 85%;
-    margin: auto;
-}
+/* -------------------------- TOP LEFT SECTION --------------------------*/
 
-/* <--- MAIN SECTION  */
-
-
-/* KNOW US SECTION ---> */
-div.block-know-us{
-    width: 100%;
-    height: 25%;
-}
-div.content-know-us{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin: auto;
-
-}
-div.content-know-us div.know-us-left{
-    width: auto;    
-    height: 70%;
-}
-div.content-know-us div.know-us-right{
-    width: 50%;
-    height: 75%;
-}
-/* <--- KNOW US SECTION  */
-
-
-/*  SERVICES SECTION --->  */
-div.block-services{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    background-color: #f3f3f3;
-}
-div.content-services{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-div.content-services div.services-title{
-    width: 100%;
-    height: 25%;
-    margin-top: 5%;
-}
-div.content-services div.services-box{
-    width: 90%;
-    height: 55%;
-    margin-bottom: 5%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-/* <--- SERVICES SECTION  */
-
-
-/*  CONTACT SECTION --->  */
-div.content-contact{
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
-    height: 30%;
-}
-div.content-contact div.contact-map{
-    width: 100%;
-    height: 60%;
-}
-div.contact-footer{
-    display: flex;
-    align-items: center;
-    background-color: red;
-    width: 100%;
-    height: 40%;
-}
-
-div.footer-block{
-    border-radius: 6px;
-    background-color: rgb(119, 81, 81);
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 60%;
-}
-/* <--- CONTACT SECTION  */
-
-
-
-
-/*   IN BLOCK SECTION    */
-
-
-/* MAIN BLOCK SECTION */
-
-
-/* TOP VAR SECTION */
-
-
-/* LOGO SECTION */
 div.topbar-left div.logo{
     display: flex;
     align-items: center;
@@ -162,11 +64,9 @@ div.topbar-left div.logo p{
     font-family: 'Nunito', 'sans-serif';
     font-weight: 700;
 }
-/* NAVBAR SECTION */
 
+/* -------------------------- TOP RIGHT SECTION --------------------------*/
 
-
-/* NAVBAR SECTION */
 div.topbar-right div.navbar{
     display: flex;
     align-items:center;
@@ -192,6 +92,7 @@ div.topbar-right div.navbar ul li a{
 
 div.topbar-right div.navbar ul li a.login-button{
     background-color: #ffffff;
+    margin-left: 30px;
     border-radius: 6px;
     color: #5372DD;
     padding:10px;
@@ -199,7 +100,13 @@ div.topbar-right div.navbar ul li a.login-button{
     padding-right: 20px;
 }
 
-/* NOTICE SECTION */
+/* -------------------------- NOTICE SECTION --------------------------*/
+
+div.content-main div.main-notice{
+    width: 1200px;
+    height: 85%;
+    margin: auto;
+}
 
 div.main-notice{    
     display: flex;
@@ -207,9 +114,11 @@ div.main-notice{
     width: 100%;
     height: 100%;
 }
+/* -------------------------- NOTICE LEFT SECTION --------------------------*/
+
 div.main-notice div.notice-left{    
-    width: 45%;
-    margin-right: 5%;
+    width: 48%;
+    margin-right: 2%;
     height: 60%;
     float: left;
     color: white;
@@ -260,6 +169,7 @@ div.notice-buttons button.buttons-web:hover {
     color: #5372DD;
   }
 
+/* -------------------------- NOTICE RIGHT SECTION --------------------------*/
 
 div.main-notice div.notice-right{    
     width: 50%;
@@ -272,30 +182,61 @@ div.notice-right div.notice-image img{
     opacity: 0.9;
 }
 
-/* KNOW US BLOCK SECTION */
 
+/* -------------------------- KNOW US  SECTION --------------------------*/
 
-/* LEFT SECTION */
+div.block-know-us{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+div.content-know-us{
+    
+    width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+/* -------------------------- KNOW US LEFT SECTION --------------------------*/
+
+div.content-know-us div.know-us-left{
+    width: auto;    
+    height: 100%;
+}
 div.know-us-left div.know-us-image{
     width: 50%;
     height: 85%;
 }
 div.know-us-left div.know-us-image img{
     width: 480px;
-    height: 100%;
+    height: 80%;
     border-radius: 6px;
 
 }
-/* RIGHT SECTION */
+
+/* -------------------------- KNOW US RIGHT SECTION --------------------------*/
+
+div.content-know-us div.know-us-right{
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
 div.know-us-right div.know-us-information{
     width: 100%;
     height: 100%;
-    margin-left: 10%;
+    
     
 }
 
 div.know-us-right div.know-us-information div.know-us-title h5{
     color: #F3B202;
+    padding: 0px;
+    margin: 0px;
 }
 
 div.know-us-right div.know-us-information div.know-us-buttons{
@@ -321,9 +262,36 @@ div.know-us-right div.know-us-information div.know-us-buttons button:hover{
     color:white;
 }
 
-/* SERVICES BLOCK SECTION */
+/* -------------------------- SERVICES SECTION --------------------------*/
 
-/* TITLE SECTION */
+div.block-services{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-color: #f3f3f3;
+}
+div.content-services{
+    
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+div.content-services div.services-title{
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+}
+div.content-services div.services-box{
+    width: 90%;
+    height: 55%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
 div.content-services div.services-title{
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     width: 100%;
@@ -333,7 +301,6 @@ div.content-services div.services-title h5{
     color:#F3B202;
 }
 
-/* SERVICES SECTION */
 div.services-box div.services-card{
     background-color: #ffffff;
     border-radius: 6px;
@@ -386,4 +353,97 @@ div.services-card div.card-text p.card-description{
 }
 
 
+/* -------------------------- CONTACT  SECTION --------------------------*/
 
+div.block-contact{
+    width: 100%;
+    height: 30%;
+}
+div.content-contact{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+div.content-contact div.contact-map{
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* -------------------------- CONTACT LEFT  SECTION --------------------------*/
+
+div.contact-map div.map-left{
+    width: 40%;
+    height: 100%;
+}
+div.map-left div.map-title h5{
+    color:#F3B202;
+}
+/* -------------------------- CONTACT RIGHT  SECTION --------------------------*/
+
+div.contact-map div.map-right{
+    margin-left:10%;
+    width: auto;
+    height: 80%;
+    display: flex;
+}
+/* -------------------------- CONTACT BOTTOM SECTION --------------------------*/
+
+div.contact-footer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.footer-block{
+    border-radius: 6px;
+    background-image: url("/static/img/contact-image.png");
+    background-repeat: no-repeat;
+    background-position: 90% 40%;
+    background-size: 15%;
+    background-color: #5071E3;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+div.footer-block div.footer-information{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+div.footer-block div.footer-image{
+    width: 30%;
+    height: 100%;
+}
+
+div.footer-information div.footer-title h2{
+    
+}
+div.footer-information div.footer-description{
+    font-size: 14px;
+    
+}
+div.footer-information div.footer-buttons button{
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-top:2%;
+    background-color: #36e196;
+    color:white;
+    border: #36e196 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}

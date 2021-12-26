@@ -32,9 +32,9 @@
                 <div class="navbar">
                     <ul>
                         <li><a href="{{url_for('Index')}}">Inicio</a></li>
-                        <li><a href="{{url_for('about')}}">Nosotros</a></li>
-                        <li><a href="{{url_for('contact')}}">Servicios</a></li>
-                        <li><a href="{{url_for('login')}}">Contacto</a></li>
+                        <li><a href="#block-know-us">Nosotros</a></li>
+                        <li><a href="#block-services">Servicios</a></li>
+                        <li><a href="#block-contact">Contacto</a></li>
                         <li><a class="login-button" href="{{url_for('login')}}">Ingresar</a></li>
                     </ul>
                 </div>
@@ -64,8 +64,8 @@
         </div>
 
     </div>
-    <div class="block-know-us">
-    <div class="content-know-us">
+    <div class="block-know-us" id="block-know-us">
+        <div class="content-know-us">
         <div class="know-us-left">
             <div class="know-us-image">
                 <img src="{{url_for('static', filename='img/know-us.jpg')}}" alt="know-us-image">
@@ -90,10 +90,10 @@
 
             </div>
         </div>
+        </div>
     </div>
-    </div>
-    <div class="block-services">
-    <div class="content-services">
+    <div class="block-services" id="block-services">
+        <div class="content-services">
         <div class="services-title">
             <h5>NUESTROS SERVICIOS</h5>
             <h1>Encuentra herramientas</h1>
@@ -136,20 +136,51 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="content-contact">
-        <div class="contact-map">
-            <div class="map-text">MAIN NOTICE</div>
-            <div class="map-image">MAIN IMAGE</div>
         </div>
-        <div class="contact-footer">
-            <div class="footer-block">CONTACT FOOTER</div>
+    </div>
+    <div class="block-contact" id="block-contact">
+        <div class="content-contact">
+            <div class="contact-map">
+                <div class="map-left">
+                    <div class="map-title">
+                        <h5>CONOCENOS UN POCO</h5>
+                        <h1>Empresa desarrolladora de software</h1>
+                    </div>
+                    <div class="map-description">
+                        <p> En Apitool, conocemos la gran importancia de las herramientas en el trabajo, por eso dedicamos tiempo a construir las mejores herramientas del mercado.
+    
+                            Somos un equipo experimentado en las necesidades del presente, te ayudaremos a trabajar de forma mas cómoda y eficiente, te enseñaremos como explotar al máximo tus recursos y profesionalizarte como apicultor.</p>
+                        <p> Descarga la ultima version T0.0.1</p>
+                    </div>
+                </div>
+                <div class="map-right">
+                    <img src="{{url_for('static', filename='img/contact-map.png')}}" alt="know-us-image">
+                </div>
+            </div>
+            <div class="contact-footer">
+                <div class="footer-block">
+                    <div class="footer-information">
+                        <div class="footer-title">
+                            <h3>NESESITAS NUESTRA AYUDA?</h3>
+                        </div>
+                        <div class="footer-description">
+                            <p>Contacta nuestro soporte que te ayudara a resolver tus dudas,  te responderemos lo mas pronto posible, antes de las 24 horas!</p>
+                        </div>
+                        <div class="footer-buttons">
+                            <button>Contacto</button>
+                        </div>
+                    </div>
+                    <div class="footer-image">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
+  
 
     {% endblock %}
-</body>
+
+
+    </body>
 </html>

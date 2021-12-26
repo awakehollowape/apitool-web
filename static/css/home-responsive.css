@@ -1,6 +1,6 @@
 @media screen and (max-width: 1300px) {
-
-            /* MAIN SECTION */
+    
+        /* MAIN SECTION */
     div.content-main div.main-notice{
         flex-direction: column-reverse;
         width: 60%;
@@ -36,6 +36,7 @@
     div.notice-left div.notice-buttons{
         margin:auto;
     }
+
        /* KNOW US SECTION */
     div.block-know-us div.content-know-us{
         width: 60%;
@@ -68,6 +69,7 @@
         margin: auto;
         width: 90%;
     }
+
        /* SERVICES SECTION */
     div.block-services{
         height: 50%;
@@ -75,6 +77,10 @@
     div.content-services{
         height: 50%;
     }
+
+
+        /* CONTACT SECTION */
+    
 
 }
     
