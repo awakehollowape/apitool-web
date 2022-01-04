@@ -5,22 +5,21 @@ html {
 body{ 
     background-repeat: no-repeat;
     background-size:cover;
-    background-image: url("/static/img/background.png");
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin:auto;
     width:100%;
-    height: 3000px;
+    height: 2800px;
     
 }
 
 /* -------------------------- MAIN  SECTION --------------------------*/
 
 div.content-main{
-    background-image: url("/static/img/main-background.png");
+    background-image: url("/static/img/main/main-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 25%;
+    height: 27%;
 }
 
 /* -------------------------- TOP  SECTION --------------------------*/
@@ -30,7 +29,7 @@ div.content-main div.topbar{
     height: 15%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 /* -------------------------- TOP LEFT SECTION --------------------------*/
@@ -144,7 +143,7 @@ div.notice-buttons button.buttons-android{
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 3px;
-    background-color: transparent;
+    background-color: #36e196;
     border: #36e196 2px solid;
 }
 div.notice-buttons button.buttons-android:hover {
@@ -154,14 +153,14 @@ div.notice-buttons button.buttons-android:hover {
 
 div.notice-buttons button.buttons-web{
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    color:#ffffff;
+    color:#5071E3;
     font-size: 16px;
     font-weight: 500;
     padding:10px;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 3px;
-    background-color: transparent;
+    background-color: white;
     border: #ffffff 2px solid;
 }
 div.notice-buttons button.buttons-web:hover {
@@ -193,28 +192,29 @@ div.block-know-us{
 }
 div.content-know-us{
     width: 1200px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
 /* -------------------------- KNOW US LEFT SECTION --------------------------*/
 
 div.content-know-us div.know-us-left{
-    width: auto;    
+    width: auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-div.know-us-left div.know-us-image{
-    width: 50%;
-    height: 85%;
-}
-div.know-us-left div.know-us-image img{
-    width: 480px;
+
+div.know-us-left  img{
+    width: 100%;
     height: 80%;
-    border-radius: 6px;
+    border-radius: 3px;
 
 }
 
@@ -223,12 +223,15 @@ div.know-us-left div.know-us-image img{
 div.content-know-us div.know-us-right{
     width: 50%;
     height: 100%;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
 }
 div.know-us-right div.know-us-information{
     width: 100%;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -237,11 +240,14 @@ div.know-us-right div.know-us-information div.know-us-title h5{
     padding: 0px;
     margin: 0px;
 }
+div.know-us-right div.know-us-information div.know-us-title h2{
+    padding: 0px;
+    margin: 0px;
+}
 
 div.know-us-right div.know-us-information div.know-us-buttons{
     margin-top: 5%;
-    width: 100%;
-    height: 30%
+
 }
 
 div.know-us-right div.know-us-information div.know-us-buttons button{
@@ -249,78 +255,71 @@ div.know-us-right div.know-us-information div.know-us-buttons button{
     padding-left: 15px;
     padding-right:15px;
     padding: 15px;
-    background-color: white;
-    color:#5372DD;
+    background-color: #5372DD;
+    color:white;
     border: #5372DD 2px solid;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 6px;
 }
 div.know-us-right div.know-us-information div.know-us-buttons button:hover{
-    background-color: #5372DD;
+    background-color: #6284ff;
+    border: #6284ff 2px solid;
     color:white;
 }
 
-/* -------------------------- SERVICES SECTION --------------------------*/
+/* -------------------------- ACHIEVEMENTS SECTION --------------------------*/
 
-div.block-services{
+div.block-achievements{
     width: 100%;
-    height: 20%;
+    height: 8%;
     display: flex;
-    background-color: #f3f3f3;
+    background-color: #fafafafa;
 }
-div.content-services{
-    
+div.content-achievements{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 1200px;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: auto;
 }
-div.content-services div.services-title{
+div.content-achievements div.achievements-title{
     width: 100%;
-    height: 25%;
-    margin-top: 5%;
+    height: 10%;
 }
-div.content-services div.services-box{
-    width: 90%;
-    height: 55%;
-    margin-bottom: 5%;
+div.content-achievements div.achievements-box{
+    width: 99%;
+    height: 60%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content:space-around;
 }
-div.content-services div.services-title{
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 25%;
-}
-div.content-services div.services-title h5{
+
+div.content-achievements div.achievements-title h5{
     color:#F3B202;
+    margin: 0%;
+    padding: 0%;
+}
+div.content-achievements div.achievements-title h2{
+    margin: 0%;
+    padding: 0%;
 }
 
-div.services-box div.services-card{
-    background-color: #ffffff;
-    border-radius: 6px;
+
+div.achievements-box div.achievements-card{
+    border-radius: 3px;
     height: 120px;
-    width: 400px;
+    width: 200px;
     display: flex;
-    flex-direction: row;
-    margin-top: 4%;
-
-}
-div.services-box div.services-card:hover{
-    background-color: #5071E3;
-}
-div.services-box div.services-card:hover div.card-image{
-    opacity: 0.2;
-}
-div.services-box div.services-card:hover div.card-text{
-    opacity: 0.2;
+    flex-direction: column;
+    align-items: center;
 }
 
-div.services-card div.card-image{
+
+div.achievements-card div.card-image{
     margin-top: 1.5%;
     margin-left: 1.5%;
     justify-content: center;
@@ -329,111 +328,197 @@ div.services-card div.card-image{
     width: 25%;
 
 }
-div.services-card div.card-text{
+div.achievements-card div.card-text{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 1%;
-    width: 60%;
+    text-align: center;
+    width: 100%;
     height: 100%;
 }
 
-div.services-card div.card-text p.card-title{
+div.achievements-card div.card-text p.card-title{
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 4%;
 }
-div.services-card div.card-text p.card-description{
-    color: black;
-    font-size: 14px;
+div.achievements-card div.card-text p.card-description{
+    color: rgb(139, 139, 139);
+    font-size: 16px;
     font-weight: 500;
     margin-top: 0.1%;
 }
 
 
-/* -------------------------- CONTACT  SECTION --------------------------*/
+/* -------------------------- SERVICES  SECTION --------------------------*/
 
-div.block-contact{
+div.block-services{
     width: 100%;
-    height: 35%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
 }
-div.content-contact{
+div.content-services{
     width: 1200px;
     height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-div.content-contact div.contact-map{
+div.services-title{
+    display: flex;
     width: 100%;
-    height: 60%;
-    margin-top: 5%;
+    height: 30%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+div.services-title h2{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+div.services-title h5{
+    width: 100%;
+    margin: 0%;
+    margin-top: 10px;
+    padding: 0%;
+    color:#F3B202;
+    
+}
+div.services-box{
+    width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------- MAP SECTION --------------------------*/
+div.block-map{
+    width: 100%;
+    height: 18%;
+    display: flex;
+}
+div.map-container{
+    width: 1200px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+div.map-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-/* -------------------------- CONTACT LEFT  SECTION --------------------------*/
-
-div.contact-map div.map-left{
-    width: 40%;
-    height: 100%;
-}
-div.map-left div.map-title h5{
-    color:#F3B202;
-}
-/* -------------------------- CONTACT RIGHT  SECTION --------------------------*/
-
-div.contact-map div.map-right{
-    margin-left:10%;
+div.map-right{
     width: auto;
-    height: 80%;
+    height: 100%;
     display: flex;
-}
-/* -------------------------- CONTACT BOTTOM SECTION --------------------------*/
-
-div.contact-footer{
-    width: 100%;
-    height: 40%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
+}
+div.map-right img {
+    width: 100%;
+    height: 60%;
+}
+div.map-left h6{
+    color: #F3B202;
+    margin: 0%;
+    padding: 0%;
 }
 
+/* -------------------------- FOOTER SECTION --------------------------*/
+
+
 div.footer-block{
-    border-radius: 6px;
-    background-image: url("/static/img/contact-image.png");
-    background-repeat: no-repeat;
-    background-position: 90% 40%;
-    background-size: 15%;
-    background-color: #5071E3;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 60%;
+
+    width: 100%;
+    height: 9%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.footer-content{
+    background-color: #5372DD;
+    width: 900px;
+    border-radius: 3px;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 div.footer-block div.footer-information{
-    width: 60%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     color: white;
+    margin-bottom: 15px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 div.footer-block div.footer-image{
     width: 30%;
     height: 100%;
 }
-
-div.footer-information div.footer-title h2{
-    
+div.footer-left{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+div.footer-right{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 div.footer-information div.footer-description{
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
-div.footer-information div.footer-buttons button{
+div.footer-information div.footer-buttons input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+div.footer-information div.footer-buttons input:focus {
+    border: 3px solid #555;
+}
+div.footer-left div.footer-information{
+    align-items: flex-start;
+
+    
+}
+div.footer-right div.footer-information{
+    align-items: flex-end;
+    
+}
+div.footer-left div.footer-information div.footer-buttons button{
     padding:10px;
     padding-right:15px;
     padding-left:15px;
@@ -446,3 +531,48 @@ div.footer-information div.footer-buttons button{
     border-radius: 3px;
     
 }
+div.footer-right div.footer-information div.footer-buttons button{
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-top:2%;
+    margin-left:2%;
+    background-color: #454545;
+    color:white;
+    border: #454545 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}
+
+/* -------------------------- FOLLOW   SECTION --------------------------*/
+
+
+div.follow-title{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+div.follow-item{
+    margin: 15px;
+    margin-left:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.follow-item ion-icon{
+    font-size: 32px;
+    color:#e4e4e4f3;
+}
+
+div.follow-item:hover ion-icon{
+    font-size: 32px;
+    color:white;
+}
+
+

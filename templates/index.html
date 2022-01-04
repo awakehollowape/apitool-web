@@ -4,7 +4,10 @@
 
     <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="{{url_for('static', filename='css/home-responsive.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/card.css')}}">
 
     <title>Apitool</title>
 
@@ -13,13 +16,12 @@
 
 {% block body%}
 
-
     <div class="content-main">
         <div class="topbar">
             <div class="topbar-left">
                 <div class="logo">
                     <a href="{{url_for('Index')}}">
-                        <img src="{{url_for('static', filename='img/logo2.png')}}" alt="logo">
+                        <img src="{{url_for('static', filename='img/main/logo2.png')}}" alt="logo">
                         <p>APITOOL</p>
                     </a>
                 </div>
@@ -30,7 +32,7 @@
                         <li><a href="{{url_for('Index')}}">Inicio</a></li>
                         <li><a href="#block-know-us">Nosotros</a></li>
                         <li><a href="#block-services">Servicios</a></li>
-                        <li><a href="#block-contact">Contacto</a></li>
+                        <li><a href="#block-services">Contacto</a></li>
                         <li><a class="login-button" href="{{url_for('login')}}">Ingresar</a></li>
                     </ul>
                 </div>
@@ -54,7 +56,7 @@
             </div>
             <div class="notice-right">
                 <div class="notice-image">
-                    <img src="{{url_for('static', filename='img/notice-image.png')}}" alt="notice-image">
+                    <img src="{{url_for('static', filename='img/main/notice-image.png')}}" alt="notice-image">
                 </div>
             </div>
         </div>
@@ -63,21 +65,19 @@
     <div class="block-know-us" id="block-know-us">
         <div class="content-know-us">
         <div class="know-us-left">
-            <div class="know-us-image">
-                <img src="{{url_for('static', filename='img/know-us.jpg')}}" alt="know-us-image">
-            </div>
+            <img src="{{url_for('static', filename='img/main/know-us.png')}}" alt="know-us-image">
         </div>
         <div class="know-us-right">
             <div class="know-us-information">
                 <div class="know-us-title">
                     <h5>CONOCENOS UN POCO</h5>
-                    <h1>Empresa desarrolladora de software</h1>
+                    <h2>Empresa desarrolladora de software</h2>
                 </div>
                 <div class="know-us-description">
                     <p> En Apitool, conocemos la gran importancia de las herramientas en el trabajo, por eso dedicamos tiempo a construir las mejores herramientas del mercado.
 
                         Somos un equipo experimentado en las necesidades del presente, te ayudaremos a trabajar de forma mas cómoda y eficiente, te enseñaremos como explotar al máximo tus recursos y profesionalizarte como apicultor.</p>
-                    <p> Descarga la ultima version T0.0.1</p>
+
                 </div>
                 <div class="know-us-buttons">
                     <button>Leer mas</button>
@@ -89,60 +89,86 @@
         </div>
     </div>
 
-    <div class="block-services" id="block-services">
-        <div class="content-services">
-        <div class="services-title">
-            <h5>NUESTROS SERVICIOS</h5>
-            <h1>Encuentra herramientas</h1>
+    <div class="block-achievements" id="block-achievements">
+        <div class="content-achievements">
+            <div class="achievements-box">
+                {% from "card.html" import achievements_card %}
+
+                {{ achievements_card("2+","AÑOS DE EXPERIENCIA", "img/main/experience.svg")}}
+                {{ achievements_card("70+","USUARIOS", "img/main/users.svg")}}
+                {{ achievements_card("850+","APIARIOS", "img/main/apiarys.svg")}}
+                {{ achievements_card("25+","UBICACIONES", "img/main/world.svg")}}
+            </div>
         </div>
-        <div class="services-box">
-            {% from "card.html" import services_card %}
-
-            {{ services_card("HERRAMIENTAS","Puedes administrar tus apiarios desde el celular o la computadora y compartirlo con tus amigos.", "img/tools.png")}}
-
-            {{ services_card("LIBROS Y GUIAS","Libros y muchas guías actualizadas, para que aprendas de forma rápida y simple.", "img/tools.png")}}
-
-            {{ services_card("CHAT ONLINE","Comparte tu experiencia laboral, aprende, enseña y comunícate con otros apicultores.", "img/tools.png")}}
-
-            {{ services_card("fdsafdsafds","Promedios tuyos y globales, te ayudara a ser mas eficiente y tomar mejores decisiones.", "img/tools.png")}}
-
-        </div>
-        </div>
+        
     </div>
 
-    <div class="block-contact" id="block-contact">
-        <div class="content-contact">
-            <div class="contact-map">
-                <div class="map-left">
-                    <div class="map-title">
-                        <h5>CONOCENOS UN POCO</h5>
-                        <h1>Empresa desarrolladora de software</h1>
-                    </div>
-                    <div class="map-description">
-                        <p> En Apitool, conocemos la gran importancia de las herramientas en el trabajo, por eso dedicamos tiempo a construir las mejores herramientas del mercado.
-    
-                            Somos un equipo experimentado en las necesidades del presente, te ayudaremos a trabajar de forma mas cómoda y eficiente, te enseñaremos como explotar al máximo tus recursos y profesionalizarte como apicultor.</p>
-                        <p> Descarga la ultima version T0.0.1</p>
-                    </div>
+    <div class="block-services" id="block-services">
+        <div class="content-services">
+            <div class="services-title">
+                <h5>NUESTROS SERVICIOS</h5>
+                <h2>Herramientas que podemos brindarte</h2>
+            </div>
+            <div class="services-box">
+                {% from 'card.html' import service_card %}
+
+                {{service_card("HERRAMIENTAS", "hammer")}}
+                {{service_card("CHAT ONLINE", "chatbox")}}
+                {{service_card("LIBROS Y GUIAS", "bookmarks")}}
+                {{service_card("ESTADISTICAS", "stats-chart")}}
+            </div>
+        </div>
+        
+    </div>
+    <div class="block-map">
+        <div class="map-container">
+            <div class="map-left">
+                <div class="map-title">
+                    <h6>CONOCENOS UN POCO</h6>
+                    <h2>Empresa desarrolladora de software</h2>
                 </div>
-                <div class="map-right">
-                    <img src="{{url_for('static', filename='img/contact-map.png')}}" alt="know-us-image">
+                <div class="map-description">
+                    <p> En Apitool, conocemos la gran importancia de las herramientas en el trabajo, por eso dedicamos tiempo a construir las mejores herramientas del mercado.
+
+                        Somos un equipo experimentado en las necesidades del presente, te ayudaremos a trabajar de forma mas cómoda y eficiente, te enseñaremos como explotar al máximo tus recursos y profesionalizarte como apicultor.</p>
+                    <p> Descarga la ultima version T0.0.1</p>
                 </div>
             </div>
-            <div class="contact-footer">
-                <div class="footer-block">
-                    <div class="footer-information">
-                        <div class="footer-title">
-                            <h3>NESESITAS NUESTRA AYUDA?</h3>
-                        </div>
-                        <div class="footer-description">
-                            <p>Contacta nuestro soporte que te ayudara a resolver tus dudas,  te responderemos lo mas pronto posible, antes de las 24 horas!</p>
-                        </div>
-                        <div class="footer-buttons">
-                            <button>Contacto</button>
-                        </div>
+            <div class="map-right">
+                <img src="{{url_for('static', filename='img/main/contact-map.png')}}" alt="know-us-image">
+            </div>
+        </div>
+    </div>
+    <div class="footer-block">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-information">
+                    <div class="footer-title">
+                        <h3>NESESITAS NUESTRA AYUDA?</h3>
                     </div>
-                    <div class="footer-image">
+                    <div class="footer-description">
+                        <p>Contacta nuestro soporte que te ayudara a resolver tus dudas,  te responderemos lo mas pronto posible, antes de las 24 horas!</p>
+                    </div>
+                    <div class="footer-buttons">
+                        <button>Contacto</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-information">
+                    <div class="footer-title">
+                        <h3>SIGUENOS EN LAS REDES</h3>
+                    </div>
+                    <div class="footer-description">
+                        {% from "card.html" import social_medias %}
+                        {{social_medias("YouTube","https://www.youtube.com/channel/UCCx1uUPT41r7OTWBNU5mzlQ")}} 
+                        {{social_medias("Facebook", "https://www.facebook.com/Apitool-108458768380477")}}
+                        {{social_medias("Instagram","https://www.instagram.com/apitool/")}}
+                        {{social_medias("Whatsapp", "https://api.whatsapp.com/send?phone=+525568888888")}}
+                    </div>
+                    <div class="footer-buttons">
+                        <input  width: "100px" type="text" placeholder="Ingresa tu correo electronico">
+                        <button>Subscribete</button>
                     </div>
                 </div>
             </div>

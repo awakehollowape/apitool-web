@@ -1,13 +1,37 @@
-{% macro services_card(title,description,image)%}
+{% macro service_card(title,img)%}
 
-<div class="services-card">
+
+<a href="#" class="card services">
+    <div class="overlay"></div>
+ <div class="circle">
+    <ion-icon class={{img}} name={{img}}></ion-icon>
+ </div>
+ <p>{{title}}</p>
+</a>
+        
+
+{% endmacro %}
+
+{% macro achievements_card(title,description,image)%}
+
+<div class="achievements-card">
     <div class="card-image">
-        <img src="{{url_for('static', filename=image)}}" alt="services-image">
+        <img src="{{url_for('static', filename=image)}}" alt="achievements-image">
     </div>
     <div class="card-text">
         <p class="card-title">{{title}}</p>
         <p class="card-description">{{description}}</p>
     </div>
 </div>
+
+{% endmacro %}
+
+{% macro social_medias(social_name, link) %}
+
+    <div class="follow-item">
+        <a href={{link}} class="follow-link">
+            <ion-icon class="{{social_name}}" name="logo-{{social_name}}"></ion-icon>
+        </a>
+    </div>
 
 {% endmacro %}

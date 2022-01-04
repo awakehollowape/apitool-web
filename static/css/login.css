@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+    margin: auto;
+    width:100%;
+    height:100%;
+  }
+body{ 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url('/static/img/login/login-background.png');
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    width:100%;
+    height:100%;
+    margin: auto;
+    
+}
+/* <----------------------------- LOGIN BLOCK ----------------------------->*/
+
+div.login-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* <----------------------------- LOGIN LEFT SECTION ----------------------------->*/
+div.login-left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+div.left-image{
+    width: 100%;
+    text-align: center;
+}
+div.left-description{
+    width: 500px;
+    text-align: center;
+    color:white;
+}
+
+div.left-slider{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.active, .dot:hover {
+    background-color: #FFC107;
+}
+  
+
+/* <----------------------------- LOGIN RIGHT SECTION ----------------------------->*/
+
+div.login-right{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* <----------------------------- TOP RIGHT SECTION ----------------------------->*/
+div.right-top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <----------------------------- MIDDLE RIGHT SECTION ----------------------------->*/
+div.right-middle{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* <----------------------------- BOTTOM RIGHT SECTION ----------------------------->*/
+div.right-bottom{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <--------------------------- RIGHT SECTION - WELCOME  --------------------------->*/
+
+div.right-title{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    color:#818181;
+}
+
+/* <----------------------------- RIGHT SECTION - LOGO ----------------------------->*/
+
+div.right-logo{
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 4%;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+div.right-logo img{
+    margin-top: 2px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+div.right-logo p{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #575757;
+    margin-left: 10px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+}
+/* <----------------------------- RIGHT SECTION - FORM ----------------------------->*/
+div.right-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.right-form input.input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: #E2E2E2 2px solid;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+    color: #575757;
+}
+
+
+div.right-form input.submit{
+    width: 315px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+    color: #575757;
+    background-color: #E2E2E2;
+}
+div.right-form input.submit:hover{
+    color:white;
+    background-color: #5071E3;
+}

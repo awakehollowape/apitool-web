@@ -1,6 +1,6 @@
 @media screen and (max-width: 1300px) {
     
-        /* MAIN SECTION */
+                            /* ----------------------------- MAIN REPOSIVE ----------------------------- */
     div.content-main div.main-notice{
         flex-direction: column-reverse;
         width: 60%;
@@ -16,9 +16,8 @@
     div.main-notice div.notice-right{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 20%;
-        margin:auto;
+        width: 0%;
+        height: 0%;
     }
     div.notice-right div.notice-image{
 
@@ -37,7 +36,8 @@
         margin:auto;
     }
 
-       /* KNOW US SECTION */
+                            /* ----------------------------- KNOW US REPOSIVE ----------------------------- */
+
     div.block-know-us div.content-know-us{
         width: 60%;
         height: 90%;
@@ -45,8 +45,8 @@
         text-align: center;
     }
     div.content-know-us div.know-us-left{
-        width: 100%;
-        height: 40%;
+        width: 0%;
+        height: 0%;
     }
     div.content-know-us div.know-us-left div.know-us-image{
         width: 100%;
@@ -55,6 +55,7 @@
     div.content-know-us div.know-us-right{
         width: 100%;
         height: 60%;
+        margin: auto;
     }
     div.content-know-us div.know-us-right div.know-us-information{
         width: 100%;
@@ -69,17 +70,20 @@
         margin: auto;
         width: 90%;
     }
+                            /* ----------------------------- SERVICES REPOSIVE ----------------------------- */
 
-       /* SERVICES SECTION */
-    div.block-services{
-        height: 50%;
+    div.block-achievements{
+        height: 30%;
     }
-    div.content-services{
-        height: 50%;
+    div.content-achievements{
+        height: 100%;
     }
+    div.content-achievements div.achievements-title{
+        display: flex;
+        align-items: center;
+        flex-direction: column;}
 
-
-        /* CONTACT SECTION */
+                            /* ----------------------------- CONTACT REPOSIVE ----------------------------- */
     
 
 }
