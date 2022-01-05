@@ -1,9 +1,11 @@
 {% extends './layout.html'%}
+{% from "login-macros.html" import selectLogin, selectRegister  %}
 
 {% block head%}
     <title>asdasd</title>
     
     <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">    
+    <script src="{{url_for('static', filename='scripts/login.js')}}"></script>
 {% endblock %}
 
 
@@ -29,9 +31,12 @@
             </div>
         </div>
         <div class="login-right">
-            {% from "login-macros.html" import selectLogin, selectRegister  %}
-            {{selectLogin()}}
-
+            <div id="login" class="show-login">
+                {{selectLogin()}}
+            </div>
+            <div id="register" class="show-register">
+                {{selectRegister()}}
+            </div>
         </div>
     </div>
 

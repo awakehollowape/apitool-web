@@ -182,3 +182,13 @@ div.right-form input.submit:hover{
     color:white;
     background-color: #5071E3;
 }
+div.show-login{
+    width: 100%;
+    height: 100%;
+
+}
+div.show-register{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
