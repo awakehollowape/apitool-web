@@ -1,4 +1,4 @@
-{% extends './layout.html' %}
+{% extends './index/layout.html' %}
 
 {% block head%}
 
@@ -15,6 +15,10 @@
 
 
 {% block body%}
+
+{% from "./index/card.html" import achievements_card %}
+
+{% from './index/card.html' import service_card %}
 
     <div class="content-main">
         <div class="topbar">
@@ -92,7 +96,6 @@
     <div class="block-achievements" id="block-achievements">
         <div class="content-achievements">
             <div class="achievements-box">
-                {% from "card.html" import achievements_card %}
 
                 {{ achievements_card("2+","AÑOS DE EXPERIENCIA", "img/main/experience.svg")}}
                 {{ achievements_card("70+","USUARIOS", "img/main/users.svg")}}
@@ -110,7 +113,6 @@
                 <h2>Herramientas que podemos brindarte</h2>
             </div>
             <div class="services-box">
-                {% from 'card.html' import service_card %}
 
                 {{service_card("HERRAMIENTAS", "hammer")}}
                 {{service_card("CHAT ONLINE", "chatbox")}}
@@ -160,7 +162,7 @@
                         <h3>SIGUENOS EN LAS REDES</h3>
                     </div>
                     <div class="footer-description">
-                        {% from "card.html" import social_medias %}
+                        {% from "./index/card.html" import social_medias %}
                         {{social_medias("YouTube","https://www.youtube.com/channel/UCCx1uUPT41r7OTWBNU5mzlQ")}} 
                         {{social_medias("Facebook", "https://www.facebook.com/Apitool-108458768380477")}}
                         {{social_medias("Instagram","https://www.instagram.com/apitool/")}}

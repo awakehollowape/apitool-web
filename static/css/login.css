@@ -192,3 +192,28 @@ div.show-register{
     height: 100%;
     display: none;
 }
+div.register-second{
+    width: 100%;
+    height: 80%;
+    display: none;
+}
+
+div.register-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Nunito', 'sans-serif';
+    font-weight: 700;
+    color: #575757;
+    background-color: #E2E2E2;
+}
+div.register-button:hover{
+    color:white;
+    background-color: #5071E3;
+}
