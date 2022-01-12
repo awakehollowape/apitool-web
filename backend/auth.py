@@ -2,7 +2,7 @@ from flask import Flask,  request, redirect, url_for, session
 from flask import render_template
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
-from cfg import config
+from backend.cfg import config
 import re
 
 

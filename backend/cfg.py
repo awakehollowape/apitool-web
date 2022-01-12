@@ -1,5 +1,3 @@
-from flask_mysqldb import MySQL
-
 class config():
     def __init__(self):
         self.MYSQL_HOST = "localhost"

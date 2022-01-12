@@ -1,7 +1,7 @@
 import os
 from flask import Flask, flash, request, redirect, url_for, session
 from flask import render_template
-import auth
+import backend.auth as auth
 
 
 
