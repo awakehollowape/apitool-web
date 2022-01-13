@@ -2,7 +2,6 @@ from flask import Flask,  request, redirect, url_for, session
 from flask import render_template
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
-from backend.cfg import config
 import re
 
 
@@ -10,7 +9,14 @@ import re
 # <------------------------------------------- VARIABLE DECLARATION SECTION ------------------------------------------------>#
 
 app = Flask(__name__)
-app.config.from_object(config())
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = '15441109'
+app.config['MYSQL_DB'] = 'apitool_test'
+
+#app.config.from_object(Config())
+
 mysql = MySQL(app)
 
 
@@ -19,7 +25,7 @@ def login():
     if 'loggedin' in session:
         return redirect(url_for('profile'))
     
-    if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
+    if 'request.method' == 'POST' and 'username' in request.form and 'password' in request.form:
      
         username = request.form['username']
         password = request.form['password']
@@ -84,7 +90,7 @@ def register():
                 # Redirect to profile
                 return  redirect(url_for('profile'))
             msg = 'You have successfully registered!'
-            
+
     elif request.method == 'POST':
         # Form is empty... (no POST data)
         msg = 'Please fill out the form!'

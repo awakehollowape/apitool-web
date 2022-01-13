@@ -4,7 +4,17 @@
 {% endblock %}
 
 {% block body %}
+{% from './dashboard/menubar.html' import menubar %}
+
+<div class="left-sidebar" id="left-sidebar">
+    {{menubar()}}
+    </div>
 
 
+</div>
+<div class="middle-content" id="middle-content">
+</div>
+<div class="right-sidebar" id="right-sidebar">
+</div>
 
 {% endblock%}

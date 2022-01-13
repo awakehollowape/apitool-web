@@ -1,0 +1,23 @@
+{% macro menubar() %}
+    <div class="top-sidebar">
+        <div class="top-bar">
+            <ion-icon name="menu-outline"></ion-icon>
+            <div class="account-type"> ADMIN </div>
+        </div>
+        <div class="profile-image"><img src="{{ url_for('static', filename='img/dashboard/profile.png') }}" alt="profile">
+        </div>
+        <div class="profile-name">
+            <h3>El Rakas</h3>
+        </div>
+    </div>
+    <div class="bottom-sidebar">
+        <div class="profile-links">
+            <a href="">Dashboard</a>
+            <a href="">Dashboard</a>
+            <a href="">Dashboard</a>
+            <a href="">Dashboard</a>
+            <a href="">Profile</a>
+            <a href="">Settings</a>
+            <a href="{{url_for('logout')}}">Logout</a>
+        </div>
+{% endmacro %}

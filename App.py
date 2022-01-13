@@ -27,6 +27,8 @@ app.add_url_rule('/register', view_func=auth.register, methods=['GET', 'POST'])
 app.add_url_rule('/logout', view_func=auth.logout, methods=['GET', 'POST'])
 
 
+
+
 # <------------------ DASHBOARD --------------->#
 
 @app.route('/dashboard')
